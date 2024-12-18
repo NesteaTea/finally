@@ -1,17 +1,26 @@
-$bgColor: #24292e;
-$text: #fff;
+// Vendor
+@import "~normalize.css";
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+// Global
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/title.scss";
+@import "./global/button.scss";
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+// Blocks
+@import "blocks/body-content.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/footer-menu.scss";
+@import "./blocks/language-switcher.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/services.scss";
+@import "./blocks/brands.scss";
+@import "./blocks/tech.scss";
+@import "./blocks/price.scss";
+@import "./blocks/page-footer.scss";
+@import "blocks/modal.scss";
+
